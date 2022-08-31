@@ -18,7 +18,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.dbic.react-native-navigation-tutorial"
     },
     "android": {
       "adaptiveIcon": {
