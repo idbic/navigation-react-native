@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default function HomeScreen() {
+export default function ThirdScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>You Made it to the SECOND screen through the router. </Text>
+      <Text>Third</Text>
+      <Button title="Pop to root" onPress={() => navigation.popToTop()} />
+      <Button title="Pop" onPress={() => navigation.pop()} />
       <StatusBar style="auto" />
     </View>
   );

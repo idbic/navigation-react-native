@@ -1,16 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Button, Text, View } from 'react-native';
+import { StyleSheet, Button, View } from 'react-native';
 
-export default function SecondScreen({navigation}) {
+export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      
       <Button 
-      title="Navigate to second screen in French"
-      onPress={()=> navigation.navigate("Second", {language: 'french'})}/>
+        title="Navigate to second screen with french"
+        onPress={() => navigation.navigate("Second", { language: "french" })}
+      />
       <Button 
-      title="Navigate to second screen in English"
-      onPress={()=> navigation.navigate("Second", {language: 'english'})}/>
+        title="Navigate to second screen with english"
+        onPress={() => navigation.navigate("Second", { language: "english" })}
+      />
       <StatusBar style="auto" />
     </View>
   );
